@@ -33,7 +33,7 @@ const roomHandler = (socket: Socket) => {
      */
 
     const joinedRoom = ({ roomId, peerId } : IRoomParams ) => {
-        console.log("Joinded room called", rooms);
+        console.log("Joinded room called", rooms, roomId, peerId);
         if(rooms[roomId]) {
             // If the given roomId exists in the memory db
             console.log("New user has joined room", roomId, "with peer id as", peerId);
